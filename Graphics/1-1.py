@@ -4,11 +4,11 @@ WIDTH = 360
 HEIGHT = 480
 FPS = 30
 
-BLACK = [1, 0, 0]
+COLOR = [1, 0, 0]
 
 pygame.init()
 pygame.mixer.init()
-screen = pygame.display.set_mode((WIDTH, HEIGHT ))
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("My Game")
 clock = pygame.time.Clock()
 
@@ -20,9 +20,9 @@ while running:
         if event.type == pygame.QUIT:
             running = False
     all_sprites.update()
-    screen.fill(BLACK)
+    screen.fill(COLOR)
     all_sprites.draw(screen)
     pygame.display.flip()
-    pygame.display.update()
+    #pygame.display.update()
 
 pygame.quit()
