@@ -1,2 +1,3 @@
 # learnpython
-New to Python
+Using KidsCanCode youtube channel to learn python
+
